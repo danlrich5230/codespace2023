@@ -1,0 +1,11 @@
+{
+    "name": "PostgreSQL Environment",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "forwardPorts": [5432],
+    "postCreateCommand": "service postgresql start",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    }
+}
