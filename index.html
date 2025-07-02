@@ -3,32 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Multiply by 5</title>
-  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-  <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <title>News Helper</title>
 </head>
 <body>
-  <div id="root"></div>
-  <script type="text/babel">
-    function MultiplierApp() {
-      const [number, setNumber] = React.useState('');
-      const product = number === '' ? '' : Number(number) * 5;
-      return (
-        <div>
-          <h1>Multiply by 5</h1>
-          <input
-            type="number"
-            value={number}
-            onChange={e => setNumber(e.target.value)}
-            placeholder="Enter a number"
-          />
-          <p>Product: {product}</p>
-        </div>
-      );
-    }
-
-    ReactDOM.render(<MultiplierApp />, document.getElementById('root'));
-  </script>
+  <h1>News Helper App</h1>
+  <ul>
+    <li><a href="multiply.html">Multiply by 5 Demo</a></li>
+    <li><a href="headline.html">Headline Suggestion Tool</a></li>
+  </ul>
 </body>
 </html>
